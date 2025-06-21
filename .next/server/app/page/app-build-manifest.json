@@ -1,11 +1,13 @@
 {
   "pages": {
     "/page": [
-      "static/chunks/[root-of-the-server]__8ebb6d4b._.css",
-      "static/chunks/node_modules_next_dist_1a6ee436._.js",
+      "static/chunks/node_modules_next_dist_05476590._.js",
+      "static/chunks/[root-of-the-server]__1a9f3e9a._.js",
+      "static/chunks/[root-of-the-server]__7db745e8._.css",
       "static/chunks/src_app_layout_tsx_c0237562._.js",
-      "static/chunks/node_modules_@radix-ui_e0947dc3._.js",
-      "static/chunks/src_app_page_tsx_3d22f4d5._.js",
+      "static/chunks/node_modules_c5b0a85b._.js",
+      "static/chunks/src_a633e1c4._.js",
+      "static/chunks/src_app_page_tsx_fc9c549d._.js",
       "static/chunks/[turbopack]_browser_dev_hmr-client_hmr-client_ts_fd44f5a4._.js",
       "static/chunks/node_modules_next_dist_compiled_2ce9398a._.js",
       "static/chunks/node_modules_next_dist_client_8f19e6fb._.js",
