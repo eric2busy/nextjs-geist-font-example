@@ -1,0 +1,64 @@
+# Supabase Project Configuration
+
+[api]
+# Port to run the API on
+port = 54321
+# JWT secret used to sign tokens
+jwt_secret = "your-super-secret-jwt-secret"
+# Disable documentation
+enable_swagger = false
+
+[db]
+# Maximum number of connections allowed
+max_connections = 100
+# Pool timeout in seconds
+pool_timeout = 30
+
+[auth]
+# Site URL for authentication callbacks
+site_url = "io.trajectory.app"
+# Additional redirect URLs
+additional_redirect_urls = ["io.trajectory.app://*"]
+# JWT expiry time in seconds
+jwt_exp = 3600
+# Enable/disable specific auth providers
+[auth.external.apple]
+enabled = true
+client_id = "your-apple-client-id"
+secret = "your-apple-client-secret"
+
+[storage]
+# Maximum file size in bytes (10MB)
+file_size_limit = 10485760
+
+# Enable specific features
+[features]
+# Enable row level security
+row_level_security = true
+# Enable realtime subscriptions
+realtime = true
+
+# Email settings for auth
+[smtp]
+sender_name = "Trajectory"
+sender_email = "noreply@trajectory.app"
+
+# API Rate Limiting
+[api.rate_limits]
+points = 100
+duration = 60
+
+# Monitoring and logging
+[monitoring]
+query_logging = true
+slow_query_threshold = 2000  # milliseconds
+
+# Development settings
+[development]
+enable_db_pooling = true
+log_level = "info"
+
+# Edge Functions configuration
+[functions]
+[functions.serve]
+port = 54321
