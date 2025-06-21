@@ -11,6 +11,9 @@ let package = Package(
         .library(
             name: "TrajectoryApp",
             targets: ["TrajectoryApp"]),
+        .executable(
+            name: "TrajectoryDemo",
+            targets: ["TrajectoryDemo"]),
     ],
     dependencies: [
         .package(url: "https://github.com/supabase-community/supabase-swift.git", from: "0.3.0")
@@ -21,6 +24,12 @@ let package = Package(
             dependencies: [
                 .product(name: "Supabase", package: "supabase-swift")
             ]
+        ),
+        .executableTarget(
+            name: "TrajectoryDemo",
+            dependencies: ["TrajectoryApp"],
+            path: "Sources/TrajectoryApp/Preview",
+            sources: ["SampleApp.swift"]
         ),
         .testTarget(
             name: "TrajectoryAppTests",
